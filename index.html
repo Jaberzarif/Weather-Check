@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+    integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <title>WeatherCheck</title>
+</head>
+
+<body>
+  <div class="container" id="page-container">
+    <header class="text-center">
+      <h1 class="title-app">Weather Check</h1>
+    </header>
+    <main>
+      <div class="row">
+        <form class="col-sm-8 offset-sm-2" id="city-form">
+          <div class="form-group">
+            <label for="city">Enter your city here</label>
+            <input type="text" id="city" class="form-control" required>
+          </div>
+          <button class="btn btn-primary" type="submit">Check</button>
+          <div class="row col-sm-12" style="padding-top: 10px;">
+              <div id="widget" class="widget">
+                <div class="details">
+                  <div id="temp" class="temperature">??</div>
+                  <div id="city-name" class="summary">????, ??</div>
+                  <div id="weather-report" class="summaryText text-left">----</div>
+                  
+                </div>
+                  
+              </div>
+            </div> 
+            <div id="error" class="errorText text-center"></div>    
+        </form>  
+       
+      </div>
+     
+    </main>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
